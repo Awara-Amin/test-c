@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+header{
+  background-image: url("car.jpg");
+  color:white;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-size: cover;
+  background-position: center center;
+  /* min-height: 100vh; */
+  min-height: calc(100vh - 102px);
+
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  padding-left: 150px;
+
+}
+
+.content{
+  /* margin-left: 180px; */
+max-width: 100%;
+  margin-bottom: 200px;
+}
+
+nav{
+  display: flex;
+  justify-content:space-between;
+}
+
+nav ul{
+  display: flex;
+  /* if we dont do this, we would have the dots next to each list */
+  list-style-type: none;
+
+
+
+}
+/* nav ul li{
+  padding-left: 10px;
+} */
+
+.content h1, h3{
+  color: green;
+
+}
+
+nav div{
+  font-size: 35px;
+  width: 350px;
+
+}
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    padding: 0;
+    margin: 0
+    text-decoration: none;
+    text-align: center;
+}
+
+.selected {
+    font-weight: bold;
+}
+ul li{
+  padding: 10px;
+  /* padding: 10px; */
+  /* width:80px */
+}
+.logo{
+  margin-top: 20px;
+  font-size: 40px
+  /* height: 70px; */
+}
+
+.highlight {
+    background-color: #00c2ff;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+
+/* footer */
+footer{
+  background-color: black;
+  color: white;
+  padding: 1rem;
+
+}
+
+footer ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 5;
+
+}
+ul strong {
+    color: yellow;
+}
+
+footer p {
+    margin:0;
+}
+
+@media screen and (max-width: 700px){
+
+  .logo{
+    font-size: 30px;
+    width:300px;
+    height: :100px;
+    margin-top: 80px
+  }
+.container{
+  padding:5px 50px;
+}
+
+ul li a {
+   display: none;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.content{
+  margin-bottom: 400px;
+}
+
+
+footer ul{
+
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: space-between;
+  list-style-type: none; */
+  padding: 0;
+  text-align: center;
+
+}
